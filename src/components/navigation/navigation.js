@@ -25,6 +25,10 @@ const Navigation = () => {
                 Entreprise
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink to="/histoire" className="nav-link" aria-current="page" href="#">
+                Histoire
+            </li>
             <li>
               <NavLink to="/equipage" className="nav-link" aria-current="page" href="#">
                 Équipage
