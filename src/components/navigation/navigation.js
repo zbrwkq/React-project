@@ -28,6 +28,7 @@ const Navigation = () => {
             <li className="nav-item">
               <NavLink to="/histoire" className="nav-link" aria-current="page" href="#">
                 Histoire
+              </NavLink>
             </li>
             <li>
               <NavLink to="/equipage" className="nav-link" aria-current="page" href="#">
