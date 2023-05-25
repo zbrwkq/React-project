@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { formatDate } from "../../utils/fonctions";
 
 const History = () => {
   const [data, setData] = useState(null);
@@ -21,11 +22,17 @@ const History = () => {
   }, []);
   return (
     <div className="container my-3">
-      <div className="list-group">
+      <h1>Archive des évènements</h1>
+      <div className="list-group mt-3">
         {data != null
           ? data.map((data) => (
-              <Link to={`${data.id}`} key={data.id} className="list-group-item">
+              <Link
+                to={`${data.id}`}
+                key={data.id}
+                className="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              >
                 {data.title}
+                <span>{formatDate(data.event_date_unix)}</span>
               </Link>
             ))
           : null}

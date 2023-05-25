@@ -55,6 +55,7 @@ const RocketDetails = () => {
 
                   {data.flickr_images.slice(1).map((image, index) => (
                     <button
+                      key={index}
                       type="button"
                       data-bs-target="#carouselExampleIndicators"
                       data-bs-slide-to={index + 1}
@@ -119,9 +120,9 @@ const RocketDetails = () => {
             </div>
           </div>
           <div className="card mt-5 p-3">
-            <b>Propulseur {data.engines.type}</b>
+            <b>Propulseurs type {data.engines.type}</b>
             <div className="row justify-content-beteween px-3 py-1">
-              <p className="col-6">
+              <p className="col-12 col-sm-6">
                 Nombre de propulseur: {data.engines.number}
                 <br />
                 Combustible 1: {data.engines.propellant_1}
@@ -129,7 +130,7 @@ const RocketDetails = () => {
                 Combustible 2: {data.engines.propellant_2}
                 <br />
               </p>
-              <p className="col-6">
+              <p className="col-12 col-sm-6">
                 Poussée au niveau de la mer: {data.engines.thrust_sea_level.kN}
                 kN
                 <br />

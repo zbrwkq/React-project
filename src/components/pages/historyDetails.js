@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { formatDate } from "../../utils/fonctions";
 
 const HistoryDetails = () => {
   const [data, setData] = useState(null);
@@ -22,24 +23,14 @@ const HistoryDetails = () => {
     fetchData();
   }, [id]);
 
-  const formatDate = (date) => {
-    var d = new Date(0);
-    d.setUTCSeconds(date);
-    return (
-      (d.getDate() < 10 ? "0" + d.getDate() : d.getDate()) +
-      "/" +
-      (d.getMonth() < 10 ? "0" + d.getMonth() : d.getMonth()) +
-      "/" +
-      d.getFullYear()
-    );
-  };
+  
   return (
     <div className="container my-3">
         <Link to="/histoire" className="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover">Retour</Link>
       {data !== null ? (
         <>
           <h1>{data.title}</h1>
-          <h2>{formatDate(data.event_date_unix)}</h2>
+          <h2 className="text-secondary h3">{formatDate(data.event_date_unix)}</h2>
           <p>{data.details}</p>
           {data.links !== null ? (
             <p>
