@@ -1,27 +1,24 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
-import { formatDate } from "../../utils/fonctions";
+import { ToastContainer, toast } from 'react-toastify';
+import { fetchData, formatDate } from "../../utils/fonctions";
 
 const History = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const apiUrl = "https://api.spacexdata.com/v4/history";
-
-        const response = await axios.get(apiUrl);
-        setData(response.data);
-      } catch (error) {
-        console.log(error);
-        setData(null);
-      }
-    };
-    fetchData();
+    const q = fetchData("history");
+    q.then((res) => {
+        if(res.status === 200){
+            setData(res.data);
+        }else{
+          toast.error(`Une erreur s'est produite : ${res.message}`);
+        }
+    });
   }, []);
   return (
     <div className="container my-3">
+      <ToastContainer />
       <h1>Archive des évènements</h1>
       <div className="list-group mt-3">
         {data != null

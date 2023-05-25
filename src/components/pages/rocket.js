@@ -1,26 +1,24 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import { fetchData } from "../../utils/fonctions";
 
 const Rocket = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const apiUrl = "https://api.spacexdata.com/v4/rockets";
-
-        const response = await axios.get(apiUrl);
-        setData(response.data);
-      } catch (error) {
-        console.log(error);
-        setData(null);
+    const q = fetchData("rockets");
+    q.then((res) => {
+      if (res.status === 200) {
+        setData(res.data);
+      } else {
+        toast.error(`Une erreur s'est produite : ${res.message}`);
       }
-    };
-    fetchData();
+    });
   }, []);
   return (
     <div className="container my-3">
+      <ToastContainer />
       {data !== null ? (
         <div className="row justify-content-around gy-5">
           {data.map((data) => (

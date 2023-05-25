@@ -1,24 +1,22 @@
 import React, { useState, useEffect } from 'react'
-import axios from "axios"
-
 import { ToastContainer, toast } from 'react-toastify';
+import { fetchData } from '../../utils/fonctions';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Entreprise = () => {
 
     const [data, setData] = useState([])
 
-    const fetchData = async () => {
-        try {
-            const response = await axios.get('https://api.spacexdata.com/v4/company');
-            setData(response.data);
-        } catch (error) {
-            toast.error(`Une erreur s'est produite : ${error.message}`);
-        }
-    };
 
     useEffect(() => {
-        fetchData();
+    const q = fetchData("company");
+    q.then((res) => {
+        if(res.status === 200){
+            setData(res.data);
+        }else{
+          toast.error(`Une erreur s'est produite : ${res.message}`);
+        }
+    });
     }, []);
 
     return (
