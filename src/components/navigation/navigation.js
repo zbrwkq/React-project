@@ -28,10 +28,16 @@ const Navigation = () => {
             <li className="nav-item">
               <NavLink to="/histoire" className="nav-link" aria-current="page" href="#">
                 Histoire
+              </NavLink>
             </li>
             <li>
               <NavLink to="/equipage" className="nav-link" aria-current="page" href="#">
                 Équipage
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/rocket" className="nav-link" aria-current="page" href="#">
+                Fusée
               </NavLink>
             </li>
           </ul>
