@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from "axios"
 
+import CardMembre from '../layout/cardMembre';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { library } from '@fortawesome/fontawesome-svg-core';
 
-import CardMembre from '../layout/cardMembre';
+library.add(faChevronRight);
 
 const Membre = () => {
     const [data, setData] = useState([])
@@ -27,7 +31,8 @@ const Membre = () => {
     }, []);
 
     return (
-        <div className='container'>
+        <div className='container mt-3'>
+            <Link to="/equipage" className="link-secondary btnRetour"><FontAwesomeIcon icon={faChevronRight} className="btnRetour" flip="horizontal" /> Retour</Link>
             <ToastContainer />
             <CardMembre key={data.id} membre={data}></CardMembre>
         </div>

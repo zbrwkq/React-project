@@ -37,20 +37,21 @@ const Equipage = () => {
     else {
         filteredMembers = data
     }
-
+    console.log(filteredMembers)
     return (
-        <div className='container d-flex flex-column justify-content-center mt-4'>
+        <div className='container d-flex flex-column justify-content-center align-items-center mt-4'>
 
-            <form className='d-flex' method='GET' action='?'>
-                <input id="search" className='form-control me-2' type='search' placeholder='Rechercher' aria-label='Rechercher' name="filtre" />
-                <button className='btn btn-outline-success' type='submit'>
+            <form className='searchBar col-9' method='GET' action='?'>
+                <input id="search" className='form-control ps-4' placeholder='Rechercher par nom ou agence' aria-label='Rechercher' name="filtre" />
+                <button className='btn p-0 me-3' type='submit'>
                     <i className="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
 
             <ToastContainer />
-            <div className='listCards mt-3'>
-                {filteredMembers ? (
+
+            <ul className='list-group listCards col-7 mt-3'>
+                {filteredMembers && filteredMembers.length > 0 ? (
                     filteredMembers.map((membre) => {
                         return <CardEquipage
                             key={membre.id}
@@ -58,9 +59,9 @@ const Equipage = () => {
                         ></CardEquipage>
                     })
                 ) : (
-                    <p></p>
+                    <div className='errorFiltre'>Aucun membre d'équipage n'as pu être récupéré avec le filtre actuel</div>
                 )}
-            </div>
+            </ul>
         </div>
     )
 }
