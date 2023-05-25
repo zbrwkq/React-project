@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
-import { fetchData } from '../../utils/fonctions'
+import { fetchData, bigNumber } from '../../utils/fonctions'
 import 'react-toastify/dist/ReactToastify.css'
 
 const Entreprise = () => {
@@ -32,19 +32,19 @@ const Entreprise = () => {
                     <div>
                         L&apos;entrepris compte actuellement :
                         <ul>
-                            <li>{data.employees} employés</li>
+                            <li>{bigNumber(data.employees)} employés</li>
                             <li>{data.vehicles} fusées</li>
                             <li>{data.launch_sites} site de lancement</li>
                             <li>{data.test_sites} site de test</li>
                         </ul>
                     </div>
                     <div>{data.summary}</div>
-                    <div>Sa valorisation est estimé à {data.valuation}$</div>
+                    <div>Sa valorisation est estimé à {bigNumber(data.valuation)}$</div>
                     <div>
                         <div>CEO : {data.ceo}</div>
                         <div>CTO : {data.cto}</div>
                         <div>COO : {data.coo}</div>
-                        <div>CTO Prpulsion : {data.cto_propulsion}</div>
+                        <div>CTO Propulsion : {data.cto_propulsion}</div>
                     </div>
                     <div>
                         Liens utiles :<a href={data.links.website}>Site</a>

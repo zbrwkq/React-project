@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
-import { fetchData } from '../../utils/fonctions'
+import { fetchData, bigNumber } from '../../utils/fonctions'
 import { ToastContainer, toast } from 'react-toastify'
 
 const RocketDetails = () => {
@@ -14,7 +14,7 @@ const RocketDetails = () => {
             if (res.status === 200) {
                 setData(res.data)
             } else {
-                toast.error(`Une erreur s'est produite : ${res.message}`)
+                toast.error(`Une erreur s'est produite  : ${res.message}`)
             }
         })
     }, [id])
@@ -36,10 +36,10 @@ const RocketDetails = () => {
                     </h2>
                     <p>{data.description}</p>
                     <p>
-                        Lien wikipedia: <a href={data.wikipedia}>{data.wikipedia}</a>
+                        Lien wikipedia : <a href={data.wikipedia}>{data.wikipedia}</a>
                     </p>
                     <div className='row mt-5'>
-                        <div className='col-12 col-sm-4'>
+                        <div className='col-12 col-md-4'>
                             <div id='carouselExampleIndicators' className='carousel slide'>
                                 <div className='carousel-indicators'>
                                     <button
@@ -105,36 +105,44 @@ const RocketDetails = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className='col-8'>
-                            <p>
-                                Premier lancé: {data.first_flight}
-                                <br />
-                                Coût par lancé: {data.cost_per_launch}$<br />
-                                Nombre d&apos;étages: {data.stages}
-                                <br />
-                                Dimension: Hauteur: {data.height.meters}m - diamètre:{' '}
-                                {data.diameter.meters}m - masse: {data.mass.kg}kg
-                            </p>
+                        <div className='col-12 col-md-8'>
+                            <ul className='list-group list-group-flush'>
+                                <li className='list-group-item d-flex justify-content-between align-items-center'>
+                                    Premier lancé : <span>{data.first_flight}</span>
+                                </li>
+                                <li className='list-group-item d-flex justify-content-between align-items-center'>
+                                    Coût par lancé : <span>{bigNumber(data.cost_per_launch)}$</span>
+                                </li>
+                                <li className='list-group-item d-flex justify-content-between align-items-center'>
+                                    Nombre d&apos;étages : <span>{data.stages}</span>
+                                </li>
+                                <li className='list-group-item d-flex justify-content-between align-items-center'>
+                                    <span>Hauteur : {data.height.meters}m</span>-<span>diamètre :{' '}
+                                    {data.diameter.meters}m</span>
+                                    <span>-</span>
+                                    <span>masse : {bigNumber(data.mass.kg)}kg</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div className='card mt-5 p-3'>
                         <b>Propulseurs type {data.engines.type}</b>
                         <div className='row justify-content-beteween px-3 py-1'>
                             <p className='col-12 col-sm-6'>
-                                Nombre de propulseur: {data.engines.number}
+                                Nombre de propulseur : {data.engines.number}
                                 <br />
-                                Combustible 1: {data.engines.propellant_1}
+                                Combustible 1 : {data.engines.propellant_1}
                                 <br />
-                                Combustible 2: {data.engines.propellant_2}
+                                Combustible 2 : {data.engines.propellant_2}
                                 <br />
                             </p>
                             <p className='col-12 col-sm-6'>
-                                Poussée au niveau de la mer: {data.engines.thrust_sea_level.kN}
+                                Poussée au niveau de la mer : {data.engines.thrust_sea_level.kN}
                                 kN
                                 <br />
-                                Poussée dans le vide: {data.engines.thrust_vacuum.kN}kN
+                                Poussée dans le vide : {data.engines.thrust_vacuum.kN}kN
                                 <br />
-                                Ratio poussée/poid: {data.engines.thrust_to_weight}
+                                Ratio poussée/poid : {data.engines.thrust_to_weight}
                             </p>
                         </div>
                     </div>
