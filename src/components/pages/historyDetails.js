@@ -34,7 +34,7 @@ const HistoryDetails = () => {
     );
   };
   return (
-    <div className="container">
+    <div className="container my-3">
         <Link to="/histoire" className="link-secondary link-underline-opacity-0 link-underline-opacity-100-hover">Retour</Link>
       {data !== null ? (
         <>
