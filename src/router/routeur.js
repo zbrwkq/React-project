@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Layout from "../components/layout/layout";
-
+import NoMatch from "../router/noMatch"
 const Routeur = () => {
   return (
     <BrowserRouter>
