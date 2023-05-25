@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom';
-import axios from "axios"
+import { useParams } from 'react-router-dom'
+import axios from 'axios'
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
-import CardMembre from '../layout/cardMembre';
+import CardMembre from '../layout/cardMembre'
 
 const Membre = () => {
     const [data, setData] = useState([])
@@ -16,15 +16,14 @@ const Membre = () => {
             var url = `https://api.spacexdata.com/v4/crew/${id}`
             const response = await axios.get(url)
             setData(response.data)
-
         } catch (error) {
-            toast.error(`Une erreur s'est produite : ${error.message}`);
+            toast.error(`Une erreur s'est produite : ${error.message}`)
         }
     }
 
     useEffect(() => {
-        fetchData();
-    }, []);
+        fetchData()
+    }, [])
 
     return (
         <div className='container'>

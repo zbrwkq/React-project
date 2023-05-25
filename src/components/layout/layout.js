@@ -1,17 +1,19 @@
-import Navigation from "../navigation/navigation";
+import Navigation from '../navigation/navigation'
 
 const Layout = ({ children }) => {
-  return (
-    <>
-      <header>
-        <Navigation />
-      </header>
+    return (
+        <>
+            <header>
+                <Navigation />
+            </header>
 
-      <main>{children}</main>
+            <main>{children}</main>
 
-      <footer className="p-4 bg-light text-center mt-5">SpaceX créé en ReactJS par Raphaël et Damien</footer>
-    </>
-  );
-};
+            <footer className='p-4 bg-light text-center mt-5'>
+                SpaceX créé en ReactJS par Raphaël et Damien
+            </footer>
+        </>
+    )
+}
 
-export default Layout;
+export default Layout
