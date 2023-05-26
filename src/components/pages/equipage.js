@@ -37,7 +37,6 @@ const Equipage = () => {
     } else {
         filteredMembers = data
     }
-    console.log(filteredMembers)
     return (
         <div className='container d-flex flex-column justify-content-center align-items-center mt-4'>
 
