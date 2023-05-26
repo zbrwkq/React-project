@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom'
-import img from "../../assets/images/logo_spacex.png"
+import img from "../../assets/images/logo_spacex_blanc.png"
 import DarkMode from "../layout/darkmode";
 
 const Navigation = () => {
   return (
-    <nav className='navbar navbar-expand-md bg-dark fixed-top p-2'>
+    <nav className='navbar navbar-expand-md bg-dark fixed-top px-2'>
       <div className='container-fluid'>
         <NavLink to='/' className='navbar-brand' href='#'>
           <img src={img}></img>
@@ -25,7 +25,7 @@ const Navigation = () => {
             <li className='nav-item'>
               <NavLink
                 to='/entreprise'
-                className='nav-link'
+                className='nav-link beautifulBorder'
                 aria-current='page'
                 href='#'
               >
@@ -35,7 +35,7 @@ const Navigation = () => {
             <li className='nav-item'>
               <NavLink
                 to='/histoire'
-                className='nav-link'
+                className='nav-link beautifulBorder'
                 aria-current='page'
                 href='#'
               >
@@ -45,7 +45,7 @@ const Navigation = () => {
             <li>
               <NavLink
                 to='/equipage'
-                className='nav-link'
+                className='nav-link beautifulBorder'
                 aria-current='page'
                 href='#'
               >
@@ -53,12 +53,12 @@ const Navigation = () => {
               </NavLink>
             </li>
             <li className='nav-item'>
-              <NavLink to='/rocket' className='nav-link' aria-current='page' href='#'>
+              <NavLink to='/rocket' className='nav-link beautifulBorder' aria-current='page' href='#'>
                 Fusée
               </NavLink>
             </li>
             <li className='nav-item'>
-              <NavLink to='/quizs' className='nav-link' aria-current='page' href='#'>
+              <NavLink to='/quizs' className='nav-link beautifulBorder' aria-current='page' href='#'>
                 Quizs
               </NavLink>
             </li>

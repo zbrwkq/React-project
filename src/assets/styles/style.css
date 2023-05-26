@@ -7,7 +7,7 @@
     /* --color-dark: rgb(23, 25, 26); */
     --color-dark: #333;
     --link-color: cornflowerblue;
-    --bg-dark: #d3d3d3;
+    --bg-dark: #646464;
 }
 .dark {
     --font-color: #eee;
@@ -17,6 +17,54 @@
     --color-dark: #4c4c4c;
     --link-color: lightblue;
     --bg-dark: #212529;
+}
+.darkmodeButton {
+    display: flex;
+    align-items: center;
+}
+/* custom checkbox*/
+.switch {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 44px;
+    background: #303030;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.switch:after {
+    position: absolute;
+    left: 20px;
+    top: -3px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: black;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+    content: '';
+    transition: all 0.3s ease;
+}
+.switch:active:after {
+    transform: scale(1.15, 0.85);
+}
+.cbx:checked ~ label {
+    background: #ebebeb;
+}
+.cbx:checked ~ label:after {
+    left: -2px;
+    background: #ffffff;
+}
+.cbx:disabled ~ label {
+    background: #d5d5d5;
+    pointer-events: none;
+}
+.cbx:disabled ~ label:after {
+    background: #bcbdbc;
+}
+.hidden {
+    display: none;
 }
 
 body {
@@ -30,9 +78,8 @@ body {
     text-decoration: none;
     font-size: 1.4rem;
 }
-.navbar-brand > img {
-    width: 140px;
-    height: auto;
+.card {
+    padding: 0;
 }
 footer {
     background-color: var(--background-color);
@@ -43,20 +90,148 @@ footer {
 .navbar {
     background-color: var(--bg-dark) !important;
 }
+.navbar-nav {
+    font-size: 0.9rem;
+    margin-top: 17px;
+}
+.navbar-brand > img {
+    width: 200px;
+    height: auto;
+}
+.nav-link,
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: var(--font-color) !important;
+}
 .nav-link {
     color: var(--font-color);
 }
-
-.card{
-    padding: 0;
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
 }
-.fullSizeSection{
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: #fff !important;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 0 0 2px 0;
+    text-transform: uppercase;
+}
+.beautifulBorder::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+.beautifulBorder:hover::after,
+.beautifulBorder:focus::after {
+    width: 100%;
+}
+.beautifulBorder:hover,
+.beautifulBorder:focus {
+    outline: none;
+}
+.beautifulBorder::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link:focus::after {
+    width: 100%;
+}
+.nav-link:hover,
+.nav-link:focus {
+    outline: none;
+}
+
+/*//////////////////////////// HOME //////////////////////////*/
+.fullSizeSection {
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+/*//////////////////////////// ENTREPRISE //////////////////////////////*/
+/* .fond {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/151/684/64/spacex-rocket-falcon-9-long-exposure-wallpaper-preview.jpg);
+
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform
+} */
+.divEntreprise {
+    position: absolute;
+}
+.spaceX {
+    letter-spacing: 0.08rem;
+    font-weight: 200;
+}
+.company-info {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--bg-dark);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    opacity: 0.9;
+  }
+.company-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.info {
+    margin-bottom: 10px;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+.summary {
+    margin-top: 20px;
+}
+.valuation {
+    margin-top: 10px;
+}
+.executives {
+    margin-top: 20px;
+}
+.useful-links {
+    margin-top: 20px;
+}
+.useful-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+.useful-links a:hover {
+    text-decoration: underline;
+}
+
 /*//////////////////////////// EQUIPAGE ////////////////////////////*/
 /* ------ FILTRE ------ */
 .searchBar {
@@ -66,7 +241,6 @@ footer {
     border: 1px solid #dee2e6;
     box-sizing: border-box;
     display: flex;
-    font-family: Poppins, sans-serif;
     height: 52px;
     margin: 0 0 22.4px;
     padding: 0;
@@ -212,7 +386,7 @@ footer {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 300;
-    letter-spacing: 0.0em;
+    letter-spacing: 0em;
 }
 .textBR {
     font-size: 0.9rem;
@@ -225,7 +399,8 @@ footer {
     background-color: #e83838c2;
 }
 
-.trueResponse, .falseResponse {
+.trueResponse,
+.falseResponse {
     color: var(--font-color-opacity);
     font-weight: bold;
 }
@@ -236,4 +411,29 @@ footer {
 }
 .iconQuiz {
     font-size: 1.4rem;
+}
+/* ---------------- SCROLLBAR ---------------- */
+::-webkit-scrollbar {
+    width: 17px;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(34, 37, 38, 1);
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(72, 78, 81, 1);
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(91, 98, 101);
+}
+/* Mozilla Firefox */
+html {
+    scrollbar-color: rgba(34, 37, 38, 1) rgba(72, 78, 81, 1);
+}
+.bodyDiscussion {
+    scrollbar-width: thin;
+    scrollbar-color: #343a40 transparent;
 }
