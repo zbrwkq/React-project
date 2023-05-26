@@ -196,15 +196,19 @@ footer {
     letter-spacing: 0.08rem;
     font-weight: 200;
 }
-.company-info {
+.company-info, .company-info2 {
     margin: 20px;
-    padding: 20px;
+    padding: 15px;
+    color: var(--font-color);
     background-color: var(--bg-dark);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.blur {
+    background-color: var(--bg-dark);
     backdrop-filter: blur(8px);
     opacity: 0.9;
-  }
+}
 .company-name {
     font-size: 24px;
     font-weight: bold;
@@ -213,21 +217,17 @@ footer {
 .info {
     margin-bottom: 10px;
 }
+.executives {
+    display: flex!important;
+    justify-content: space-around;
+}
+.portraitExecutives {
+    width: auto;
+    height: 230px;
+}
 ul {
     list-style-type: disc;
     margin-left: 20px;
-}
-.summary {
-    margin-top: 20px;
-}
-.valuation {
-    margin-top: 10px;
-}
-.executives {
-    margin-top: 20px;
-}
-.useful-links {
-    margin-top: 20px;
 }
 .useful-links a {
     margin-right: 10px;
