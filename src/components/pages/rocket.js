@@ -19,28 +19,33 @@ const Rocket = () => {
         })
     }, [])
 
-    
     return (
         <div className='container my-3'>
             <ToastContainer />
             {data !== null ? (
                 <>
-                    <div className='row justify-content-around gy-5'>
+                    <div className='row justify-content-between gy-5'>
                         {data.map((data) => (
-                            <div key={data.id} className='card col-4 col-md-3 mx-1'>
+                            <div key={data.id} className='card col-5 col-lg-3 mx-1'>
                                 <Link to={`${data.id}`} className='text-dark text-decoration-none'>
                                     <img
                                         src={data.flickr_images[0]}
                                         className='card-img-top'
                                         alt={data.name}
                                     />
-                                    <div className='card-body'>
+                                    <div className='card-body text-center'>
                                         <p>{data.name}</p>
-                                        <p>
-                                            Hauteur: {data.height.meters}m<br />
-                                            diamètre: {data.diameter.meters}m<br />
-                                            masse: {bigNumber(data.mass.kg)}kg
-                                        </p>
+                                        <ul className='list-group list-group-flush'>
+                                            <li className='list-group-item d-flex justify-content-between align-items-center'>
+                                                Hauteur : <span>{data.height.meters}m</span>
+                                            </li>
+                                            <li className='list-group-item d-flex justify-content-between align-items-center'>
+                                                Diamètre : <span>{data.diameter.meters}m</span>
+                                            </li>
+                                            <li className='list-group-item d-flex justify-content-between align-items-center'>
+                                                Masse : <span>{bigNumber(data.mass.kg)}kg</span>
+                                            </li>
+                                        </ul>
                                         <p></p>
                                         <p></p>
                                     </div>
@@ -48,7 +53,7 @@ const Rocket = () => {
                             </div>
                         ))}
                     </div>
-                    <RocketCharts data={data}/>
+                    <RocketCharts data={data} />
                 </>
             ) : null}
         </div>
