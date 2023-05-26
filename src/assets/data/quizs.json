@@ -4,211 +4,211 @@
         "nom": "Quiz 1",
         "questions": [
             {
-                "question": "question 1",
+                "question": "Quelle est la plus grande planète du système solaire ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Jupiter",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Mars",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Saturne",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Vénus",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 2",
+                "question": "Qu'est-ce qu'une supernova ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une explosion d'une étoile en fin de vie",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une collision de deux étoiles",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "La naissance d'une nouvelle étoile",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "La formation d'un trou noir",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 3",
+                "question": "Quelle est aproximativement la vitesse de la lumière dans le vide ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "300 000 km/s",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "300 000 km/h",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "300 000 km/min",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "300 000 km/jour",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 4",
+                "question": "Quelle est la galaxie la plus proche de la Voie lactée ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Andromède",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Sombrero",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Whirlpool",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Pinwheel",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 5",
+                "question": "Qu'est-ce qu'un trou noir ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une région de l'espace où la gravité est si intense que rien ne peut en échapper",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Un astéroïde en rotation rapide",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une étoile géante rouge",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une collision entre deux galaxies",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 6",
+                "question": "Qu'est-ce qu'un pulsar ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une étoile en fin de vie qui émet des pulsations régulières de rayonnement",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Un type de planète naine",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une nébuleuse en forme de disque",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une éruption solaire",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 7",
+                "question": "Quelle est la théorie qui décrit l'expansion de l'Univers depuis le Big Bang ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "La théorie du Big Bang",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "La théorie des cordes",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "La théorie de l'évolution",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "La théorie de la relativité générale",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 8",
+                "question": "Qu'est-ce qu'une éclipse solaire totale ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Quand la Lune est entre le Soleil et la Terre, obscurcissant totalement le Soleil dans certaines régions",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Quand la Terre est entre le Soleil et la Lune, obscurcissant totalement la Lune dans certaines régions",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Quand une comète passe devant le Soleil, obscurcissant partiellement la lumière solaire",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Quand un astéroïde traverse l'atmosphère terrestre et crée un flash lumineux",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 9",
+                "question": "Qu'est-ce qu'un quasar ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Un trou noir supermassif au centre d'une galaxie active",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une planète rocheuse en orbite autour d'une étoile",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une nébuleuse en forme de sphère",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une étoile double",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 10",
+                "question": "Quelle est la température approximative de la surface du Soleil ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "6 000 degrés Celsius",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "5 000 degrés Celsius",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "10 000 degrés Celsius",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "reponse4",
                         "etat": false
                     }
                 ]
@@ -220,211 +220,211 @@
         "nom": "Quiz 2",
         "questions": [
             {
-                "question": "question 1",
+                "question": "Quelle est la distance moyenne entre la Terre et le Soleil ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "150 millions de kilomètres",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "1 million de kilomètres",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "10 millions de kilomètres",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "100 millions de kilomètres",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 2",
+                "question": "Qu'est-ce qu'une étoile à neutrons ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Le cœur effondré d'une étoile massive après une supernova",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une étoile massive sur le point d'exploser",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une étoile en formation entourée d'un disque de gaz et de poussière",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une étoile qui a épuisé tout son carburant nucléaire",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 3",
+                "question": "Quelle est la plus grande structure connue dans l'Univers ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Le Grand Mur de Sloan",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Un trou noir supermassif",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une galaxie géante",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Un essaim de galaxies",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 4",
+                "question": "Qu'est-ce que l'effet Doppler ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Le décalage vers le rouge ou le bleu des longueurs d'onde de la lumière due au mouvement relatif d'une source lumineuse",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "La distorsion de l'espace-temps autour d'un objet massif",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "La courbure de la lumière autour d'un corps céleste en raison de la gravité",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "L'expansion de l'Univers dans toutes les directions",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 5",
+                "question": "Qu'est-ce qu'une exoplanète ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une planète en orbite autour d'une étoile autre que le Soleil",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une planète située à l'intérieur du système solaire",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une planète en formation dans un disque protoplanétaire",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une planète composée principalement de gaz",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 6",
+                "question": "Qu'est-ce qu'une éclipse lunaire ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Quand la Terre est entre le Soleil et la Lune, obscurcissant totalement la Lune dans certaines régions",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Quand la Lune est entre le Soleil et la Terre, obscurcissant partiellement le Soleil",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Quand une comète passe devant la Lune, obscurcissant partiellement sa lumière",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Quand un astéroïde traverse l'atmosphère terrestre et crée un flash lumineux",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 7",
+                "question": "Quelle est la théorie qui postule l'existence de dimensions supplémentaires de l'espace ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "La théorie des cordes",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "La théorie de la relativité générale",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "La théorie de l'évolution",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "La théorie du Big Bang",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 8",
+                "question": "Qu'est-ce qu'une étoile filante ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Un petit corps céleste qui entre dans l'atmosphère terrestre et brûle en produisant une traînée lumineuse",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une étoile qui brille intensément dans le ciel nocturne",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une étoile en train de mourir",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une étoile qui change rapidement de couleur",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 9",
+                "question": "Qu'est-ce que la matière noire ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "De la matière invisible qui ne peut pas être détectée directement, mais dont la présence est déduite de ses effets gravitationnels",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une forme exotique de matière avec des propriétés antigravitationnelles",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Des particules élémentaires créées lors du Big Bang",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Un type d'énergie sombre qui remplit l'espace interstellaire",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 10",
+                "question": "Quelle est la théorie qui décrit la force gravitationnelle ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "La théorie de la relativité générale",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "La théorie quantique des champs",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "La théorie de l'évolution",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "La théorie du Big Bang",
                         "etat": false
                     }
                 ]
@@ -436,211 +436,211 @@
         "nom": "Quiz 3",
         "questions": [
             {
-                "question": "question 1",
+                "question": "Qu'est-ce qu'une nébuleuse ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une région de l'espace où les étoiles se forment et se développent",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Un trou noir en rotation rapide",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une planète naine en orbite autour d'une étoile",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une collision entre deux galaxies",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 2",
+                "question": "Qu'est-ce que la matière baryonique ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "La matière composée de baryons, tels que les protons et les neutrons",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une forme exotique de matière qui ne réagit pas à la force gravitationnelle",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "La matière noire qui remplit l'espace interstellaire",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une particule hypothétique qui constitue les particules élémentaires de base",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 3",
+                "question": "Quelle est la théorie actuelle sur l'origine de l'Univers ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Le Big Bang",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "La théorie de l'évolution",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "La théorie de la gravité quantique",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "La théorie des multivers",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 4",
+                "question": "Qu'est-ce qu'une étoile à pulsation variable",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une étoile dont la luminosité varie régulièrement en raison de changements internes",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une étoile qui change rapidement de couleur",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une étoile massive sur le point d'exploser",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une étoile qui émet des pulsations régulières de rayonnement",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 5",
+                "question": "Qu'est-ce que l'inflation cosmique ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une expansion accélérée de l'Univers peu de temps après le Big Bang",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une contraction de l'Univers vers un point singulier",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une théorie sur l'existence de multiples univers parallèles",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Un modèle qui explique la formation des galaxies et des amas de galaxies",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 6",
+                "question": "Qu'est-ce qu'une étoile naine blanche ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une petite étoile très dense composée principalement de carbone et d'oxygène",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une étoile en fin de vie qui a épuisé tout son carburant nucléaire",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une étoile massive sur le point d'exploser en supernova",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une étoile en formation entourée d'un disque de gaz et de poussière",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 7",
+                "question": "Qu'est-ce que la radiation cosmique de fond ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Un rayonnement thermique présent dans tout l'Univers, provenant de l'époque du Big Bang",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une émission de rayonnement provenant de galaxies lointaines",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une émission de rayonnement provenant du Soleil",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une émission de rayonnement provenant de trous noirs",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 8",
+                "question": "Qu'est-ce qu'un télescope spatial ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Un télescope utilisant des miroirs pour collecter et focaliser la lumière",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Un télescope situé au sommet d'une montagne",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Un télescope utilisant des lentilles pour collecter et focaliser la lumière",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Un télescope utilisant des ondes radio pour observer l'Univers",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 9",
+                "question": "Qu'est-ce que l'énergie sombre ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une forme d'énergie responsable de l'accélération de l'expansion de l'Univers",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "De l'énergie générée par les étoiles",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une énergie produite par les réactions nucléaires dans les étoiles",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une énergie stockée dans les planètes et les astéroïdes",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 10",
+                "question": "Qu'est-ce qu'une éclipse solaire annulaire ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Quand la Lune est entre le Soleil et la Terre, créant un anneau de lumière solaire visible autour de la Lune",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Quand la Terre est entre le Soleil et la Lune, obscurcissant totalement la Lune dans certaines régions",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Quand une comète passe devant le Soleil, obscurcissant partiellement la lumière solaire",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Quand un astéroïde traverse l'atmosphère terrestre et crée un flash lumineux",
                         "etat": false
                     }
                 ]
@@ -652,211 +652,211 @@
         "nom": "Quiz 4",
         "questions": [
             {
-                "question": "question 1",
+                "question": "Quelle est la force qui maintient les planètes en orbite autour du Soleil ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "La force gravitationnelle",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "La force électromagnétique",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "La force nucléaire forte",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "La force centrifuge",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 2",
+                "question": "Qu'est-ce qu'un trou de ver ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Un passage hypothétique reliant deux régions de l'espace-temps",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Un trou noir en rotation rapide",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une région de l'espace où la gravité est si intense que rien ne peut en échapper",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une distorsion de l'espace-temps autour d'un objet massif",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 3",
+                "question": "Quelle est la plus grande étoile connue de l'univers ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "VY Canis Majoris",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Le Soleil",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Rigel",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Betelgeuse",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 4",
+                "question": "Qu'est-ce qu'une étoile à neutrons ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Le cœur effondré d'une étoile massive après une supernova",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une étoile en formation entourée d'un disque de gaz et de poussière",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une étoile qui a épuisé tout son carburant nucléaire",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une étoile qui change rapidement de couleur",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 5",
+                "question": "Qu'est-ce que la matière noire ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une substance mystérieuse qui représente environ 27% de la masse totale de l'Univers",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "De la matière invisible qui ne peut pas être détectée directement, mais dont la présence est déduite de ses effets gravitationnels",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une forme exotique de matière avec des propriétés antigravitationnelles",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Des particules élémentaires créées lors du Big Bang",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 6",
+                "question": "Quelle est la durée approximative d'un jour sur Mars ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "24 heures et 37 minutes",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "48 heures et 37 minutes",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "36 heures et 37 minutes",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "12 heures et 37 minutes",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 7",
+                "question": "Qu'est-ce que l'effet de marée ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "L'attraction gravitationnelle de la Lune et du Soleil qui provoque des variations de niveau des océans sur Terre",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "L'effet de la rotation de la Terre sur les courants océaniques",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "La déviation de la lumière en raison de la gravité d'un objet massif",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "L'effet de la pression atmosphérique sur la météo terrestre",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 8",
+                "question": "Qu'est-ce qu'un météore ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Un petit corps céleste qui entre dans l'atmosphère terrestre et brûle en produisant une traînée lumineuse",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une étoile qui brille intensément dans le ciel nocturne",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "Une étoile en train de mourir",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une étoile qui change rapidement de couleur",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 9",
+                "question": "Qu'est-ce que l'énergie noire ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "Une forme d'énergie qui représente environ 68% de la masse et de l'énergie totale de l'Univers",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "Une forme d'énergie responsable de l'accélération de l'expansion de l'Univers",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "De l'énergie générée par les étoiles",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "Une énergie produite par les réactions nucléaires dans les étoiles",
                         "etat": false
                     }
                 ]
             },
             {
-                "question": "question 10",
+                "question": "Qu'est-ce que la cosmologie ?",
                 "reponses": [
                     {
-                        "reponse": "reponse 1",
+                        "reponse": "L'étude de l'origine, de l'évolution et de la structure de l'Univers",
                         "etat": true
                     },
                     {
-                        "reponse": "reponse 2",
+                        "reponse": "L'étude des processus biologiques dans l'univers",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 3",
+                        "reponse": "L'étude des mouvements planétaires et des orbites",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse 4",
+                        "reponse": "L'étude des objets célestes à travers le spectre électromagnétique",
                         "etat": false
                     }
                 ]
