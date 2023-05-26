@@ -1,6 +1,6 @@
 const SectionImage = ({ image, children }) => {
     return (
-        <section className='fullSizeSection' style={{ backgroundImage: `url(${image})` }}>
+        <section className='fullSizeSection position-relative' style={{ backgroundImage: `url(${image})` }}>
             {children}
         </section>
     )
