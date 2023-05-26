@@ -104,9 +104,9 @@ const RocketCharts = ({ data }) => {
                     </button>
                 </li>
             </ul>
-            <div className='tab-content p-3 border-end border-start border-bottom' id='myTabContent'>
+            <div className='tab-content p-3 border-end border-start border-bottom bg-white' id='myTabContent'>
                 <div
-                    className='tab-pane show active fade'
+                    className='tab-pane show active'
                     id='height'
                     role='tabpanel'
                     aria-labelledby='height-tab'
@@ -114,7 +114,7 @@ const RocketCharts = ({ data }) => {
                     <Bar options={options} data={heightData}/>
                 </div>
                 <div
-                    className='tab-pane fade'
+                    className='tab-pane'
                     id='diameter'
                     role='tabpanel'
                     aria-labelledby='diameter-tab'
@@ -122,7 +122,7 @@ const RocketCharts = ({ data }) => {
                     <Bar options={options} data={diameterData} />
                 </div>
                 <div
-                    className='tab-pane fade'
+                    className='tab-pane'
                     id='mass'
                     role='tabpanel'
                     aria-labelledby='mass-tab'

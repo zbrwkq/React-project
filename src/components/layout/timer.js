@@ -1,7 +1,7 @@
 const Timer = ({time, maxTime}) => {
     return ( 
-        <div class="progress">
-            <div class="progress-bar w-75" role="progressbar" aria-valuenow={time} aria-valuemin="0" aria-valuemax={maxTime}></div>
+        <div className="progress">
+            <div className="progress-bar" style={{width: `${time * 100 / maxTime }%`}} role="progressbar" aria-valuenow={time} aria-valuemin="0" aria-valuemax={maxTime}></div>
         </div>
      );
 }
