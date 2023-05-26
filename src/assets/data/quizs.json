@@ -1,7 +1,7 @@
 [
     {
-        "id" : 0,
-        "nom": "Quiz 1",
+        "id": 0,
+        "nom": "Un super quiz sur l'espace",
         "questions": [
             {
                 "question": "Quelle est la plus grande planète du système solaire ?",
@@ -196,19 +196,19 @@
                 "question": "Quelle est la température approximative de la surface du Soleil ?",
                 "reponses": [
                     {
-                        "reponse": "6 000 degrés Celsius",
-                        "etat": true
-                    },
-                    {
                         "reponse": "5 000 degrés Celsius",
-                        "etat": false
+                        "etat": true
                     },
                     {
                         "reponse": "10 000 degrés Celsius",
                         "etat": false
                     },
                     {
-                        "reponse": "reponse4",
+                        "reponse": "20 000 degrés Celsius",
+                        "etat": false
+                    },
+                    {
+                        "reponse": "4.10e10 degrés Celsius",
                         "etat": false
                     }
                 ]
@@ -216,8 +216,8 @@
         ]
     },
     {
-        "id" : 1,
-        "nom": "Quiz 2",
+        "id": 1,
+        "nom": "Un autre très bon quiz sur les étoiles",
         "questions": [
             {
                 "question": "Quelle est la distance moyenne entre la Terre et le Soleil ?",
@@ -432,8 +432,8 @@
         ]
     },
     {
-        "id" : 2,
-        "nom": "Quiz 3",
+        "id": 2,
+        "nom": "Un quiz tout a fait correcte pour découvrir l'univers",
         "questions": [
             {
                 "question": "Qu'est-ce qu'une nébuleuse ?",
@@ -648,8 +648,8 @@
         ]
     },
     {
-        "id" : 3,
-        "nom": "Quiz 4",
+        "id": 3,
+        "nom": "Un quiz tout a fait moyen mais qui saura ravir les plus petits",
         "questions": [
             {
                 "question": "Quelle est la force qui maintient les planètes en orbite autour du Soleil ?",

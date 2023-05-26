@@ -39,11 +39,16 @@ const Equipage = () => {
     }
     return (
         <div className='container d-flex flex-column justify-content-center align-items-center mt-4'>
-
             <form className='searchBar col-9' method='GET' action='?'>
-                <input id="search" className='form-control ps-4' placeholder='Rechercher par nom ou agence' aria-label='Rechercher' name="filtre" />
+                <input
+                    id='search'
+                    className='form-control ps-4'
+                    placeholder='Rechercher par nom ou agence'
+                    aria-label='Rechercher'
+                    name='filtre'
+                />
                 <button className='btn p-0 me-3' type='submit'>
-                    <i className="fa-solid fa-magnifying-glass"></i>
+                    <i className='fa-solid fa-magnifying-glass'></i>
                 </button>
             </form>
 
@@ -55,7 +60,10 @@ const Equipage = () => {
                         return <CardEquipage key={membre.id} membre={membre}></CardEquipage>
                     })
                 ) : (
-                    <div className='errorFiltre'>Aucun membre d&apos;équipage n&apos;as pu être récupéré avec le filtre actuel</div>
+                    <div className='errorFiltre'>
+                        Aucun membre d&apos;équipage n&apos;as pu être récupéré avec le filtre
+                        actuel
+                    </div>
                 )}
             </ul>
         </div>

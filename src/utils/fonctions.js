@@ -30,6 +30,6 @@ export async function fetchData(endpoint) {
 /**
  * The function takes an integer and returns it as a string with spaces between every three digits.
  */
-export function bigNumber(int){
-        return int.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+export function bigNumber(int) {
+    return int.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
 }

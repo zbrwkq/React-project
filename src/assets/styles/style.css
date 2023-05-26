@@ -1,3 +1,9 @@
+.card {
+    padding: 0;
+}
+.btn-outline-warning:hover {
+    color: white !important;
+}
 /*//////////////////////////// DARKMODE ////////////////////////////*/
 .light {
     --font-color: #333;

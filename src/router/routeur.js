@@ -14,7 +14,6 @@ import Quizs from '../components/pages/quizs'
 import Quiz from '../components/pages/quiz'
 import Home from '../components/pages/home'
 
-
 const Routeur = () => {
     return (
         <BrowserRouter>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 function DarkMode() {
     const [theme, setTheme] = useState('dark');
@@ -6,13 +6,13 @@ function DarkMode() {
     // Appelé par le toggle
     const toggleTheme = () => {
         if (theme === 'light') {
-            setTheme('dark');
+            setTheme('dark')
         } else {
-            setTheme('light');
+            setTheme('light')
         }
-    };
+    }
 
-    // Hook. Met à jour la classe selon valeur actuelle du thème. 
+    // Hook. Met à jour la classe selon valeur actuelle du thème.
     // Appelé à chaque changement du thème
     useEffect(() => {
         document.body.className = theme;
@@ -32,6 +32,6 @@ function DarkMode() {
                 <i className="fas fa-moon"></i>
             </div>
         </div>
-    );
+    )
 }
-export default DarkMode;
+export default DarkMode

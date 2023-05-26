@@ -3,6 +3,8 @@ import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
 import { fetchData, bigNumber } from '../../utils/fonctions'
 import { ToastContainer, toast } from 'react-toastify'
+import BoutonRetour from '../layout/boutonRetour'
+import Container from '../layout/container'
 
 const RocketDetails = () => {
     const [data, setData] = useState(null)
@@ -20,13 +22,8 @@ const RocketDetails = () => {
     }, [id])
 
     return (
-        <div className='container my-3'>
-            <Link
-                to='/rocket'
-                className='link-secondary link-underline-opacity-0 link-underline-opacity-100-hover'
-            >
-                Retour
-            </Link>
+        <Container>
+            <BoutonRetour link='rocket' />
             <ToastContainer />
             {data !== null ? (
                 <>
@@ -117,8 +114,8 @@ const RocketDetails = () => {
                                     Nombre d&apos;étages : <span>{data.stages}</span>
                                 </li>
                                 <li className='list-group-item d-flex justify-content-between align-items-center'>
-                                    <span>Hauteur : {data.height.meters}m</span>-<span>diamètre :{' '}
-                                    {data.diameter.meters}m</span>
+                                    <span>Hauteur : {data.height.meters}m</span>-
+                                    <span>diamètre : {data.diameter.meters}m</span>
                                     <span>-</span>
                                     <span>masse : {bigNumber(data.mass.kg)}kg</span>
                                 </li>
@@ -148,7 +145,7 @@ const RocketDetails = () => {
                     </div>
                 </>
             ) : null}
-        </div>
+        </Container>
     )
 }
 
