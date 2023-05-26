@@ -27,7 +27,6 @@ const RocketCharts = ({ data }) => {
     }
 
     const labels = data.map((data) => data.name)
-    console.log()
     const heightData = {
         labels,
         datasets: [
