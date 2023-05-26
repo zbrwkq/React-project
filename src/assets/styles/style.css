@@ -1,7 +1,9 @@
 /*//////////////////////////// DARKMODE ////////////////////////////*/
 .light {
     --font-color: #333;
+    --font-color-opacity: rgba(45, 45, 45, 0.85);
     --background-color: #eee;
+    --background-color-light: #dddddd;
     /* --color-dark: rgb(23, 25, 26); */
     --color-dark: #333;
     --link-color: cornflowerblue;
@@ -9,7 +11,9 @@
 }
 .dark {
     --font-color: #eee;
+    --font-color-opacity: rgba(241, 241, 241, 0.85);
     --background-color: rgb(23, 25, 26);
+    --background-color-light: #212529;
     --color-dark: #4c4c4c;
     --link-color: lightblue;
     --bg-dark: #212529;
@@ -149,4 +153,87 @@ footer {
 }
 .faWikipedia {
     font-size: 36px;
+}
+
+/* ////////////////////////////////// QUIZ /////////////////////////////////////// */
+.quiz-result {
+    margin-top: 2rem;
+}
+
+.titreResult {
+    font-size: 1.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.question-list {
+    list-style: none;
+    margin-top: 1.5rem;
+    padding: 0;
+}
+
+.question-card {
+    background-color: var(--background-color-light);
+    border-radius: 0.5rem;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    border-bottom: solid 1px #333;
+    padding-top: 0.5rem;
+    padding-left: 0.8rem;
+    padding-bottom: 4px;
+}
+
+.reponse-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.reponse-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 1rem;
+}
+
+.reponse-text {
+    margin-right: 0.5rem;
+}
+
+.titreResult {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0.0em;
+}
+.textBR {
+    font-size: 0.9rem;
+    color: var(--font-color-opacity);
+}
+.trueResponse {
+    background-color: #25d53ac1;
+}
+.falseResponse {
+    background-color: #e83838c2;
+}
+
+.trueResponse, .falseResponse {
+    color: var(--font-color-opacity);
+    font-weight: bold;
+}
+
+.reponse-indicator {
+    font-size: 0.8rem;
+    color: #333;
+}
+.iconQuiz {
+    font-size: 1.4rem;
 }
