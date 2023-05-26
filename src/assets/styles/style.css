@@ -1,7 +1,7 @@
-.card{
-    padding: 0 ;
+.card {
+    padding: 0;
 }
-.btn-outline-warning:hover{
+.btn-outline-warning:hover {
     color: white !important;
 }
 /*//////////////////////////// DARKMODE ////////////////////////////*/
@@ -53,10 +53,10 @@ footer {
     color: var(--font-color);
 }
 
-.card{
+.card {
     padding: 0;
 }
-.fullSizeSection{
+.fullSizeSection {
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -218,7 +218,7 @@ footer {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 300;
-    letter-spacing: 0.0em;
+    letter-spacing: 0em;
 }
 .textBR {
     font-size: 0.9rem;
@@ -231,7 +231,8 @@ footer {
     background-color: #e83838c2;
 }
 
-.trueResponse, .falseResponse {
+.trueResponse,
+.falseResponse {
     color: var(--font-color-opacity);
     font-weight: bold;
 }

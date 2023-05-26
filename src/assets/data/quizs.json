@@ -1,6 +1,6 @@
 [
     {
-        "id" : 0,
+        "id": 0,
         "nom": "Un super quiz sur l'espace",
         "questions": [
             {
@@ -216,7 +216,7 @@
         ]
     },
     {
-        "id" : 1,
+        "id": 1,
         "nom": "Un autre très bon quiz sur les étoiles",
         "questions": [
             {
@@ -432,7 +432,7 @@
         ]
     },
     {
-        "id" : 2,
+        "id": 2,
         "nom": "Un quiz tout a fait correcte pour découvrir l'univers",
         "questions": [
             {
@@ -648,7 +648,7 @@
         ]
     },
     {
-        "id" : 3,
+        "id": 3,
         "nom": "Un quiz tout a fait moyen mais qui saura ravir les plus petits",
         "questions": [
             {
