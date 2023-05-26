@@ -43,6 +43,17 @@ footer {
     color: var(--font-color);
 }
 
+=======
+.card{
+    padding: 0;
+}
+.fullSizeSection{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 /*//////////////////////////// EQUIPAGE ////////////////////////////*/
 /* ------ FILTRE ------ */
 .searchBar {

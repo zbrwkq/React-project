@@ -12,13 +12,15 @@ import Equipage from '../components/pages/equipage'
 import Membre from '../components/pages/membre'
 import Quizs from '../components/pages/quizs'
 import Quiz from '../components/pages/quiz'
+import Home from '../components/pages/home'
+
 
 const Routeur = () => {
     return (
         <BrowserRouter>
             <Layout>
                 <Routes>
-                    <Route path='/' element={<Entreprise />}></Route>
+                    <Route path='/' element={<Home />}></Route>
                     <Route path='/entreprise' element={<Entreprise />}></Route>
                     <Route path='/histoire' element={<History />}></Route>
                     <Route path='/histoire/:id' element={<HistoryDetails />}></Route>
