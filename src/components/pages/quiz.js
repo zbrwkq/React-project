@@ -1,4 +1,3 @@
-import quizs from "../../assets/data/quiz-json"
 
 const quiz = () => {
 

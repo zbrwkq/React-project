@@ -4,7 +4,7 @@ import DarkMode from "../layout/darkmode";
 
 const Navigation = () => {
   return (
-    <nav className='navbar navbar-expand-md bg-dark p-2'>
+    <nav className='navbar navbar-expand-md bg-dark p-2 fixed-top'>
       <div className='container-fluid'>
         <NavLink to='/' className='navbar-brand' href='#'>
           <img src={img}></img>
