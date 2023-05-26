@@ -1,64 +1,102 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify'
+
 import quizs from '../../assets/data/quizs.json'
-import { ToastContainer, toast } from 'react-toastify';
-import QuestionQuiz from '../layout/questionQuiz';
-import QuizResult from '../layout/quizResult';
+import QuestionQuiz from '../layout/quiz/questionQuiz'
+import Timer from '../layout/quiz/timer'
+import PreQuiz from '../layout/quiz/preQuiz'
+import QuizResult from '../layout/quiz/quizResult'
+import Container from '../layout/container'
 
 const Quiz = () => {
-    const [data, setData, currQuestion] = useState([])
-    const [shuffledQuestions, setShuffledArray] = useState([]);
+    const [data, setData] = useState(null)
+    const [currQuestion, setCurrQuestion] = useState(-1)
+    const [timer, setTimer] = useState(null)
+    const maxTime = 30
+    const [time, setTime] = useState(maxTime)
+    const [reponseUser, setReponseUser] = useState([])
+    const [finished, setFinished] = useState(false)
+    const [title, setTitle] = useState(false)
+
     const { id = '' } = useParams()
 
     const fetchData = async () => {
         try {
-            const selectedQuiz = quizs.filter((quiz) => quiz.id.toString() === id)[0];
+            const selectedQuiz = quizs.filter((quiz) => quiz.id.toString() === id)[0]
 
             if (selectedQuiz) {
                 const shuffledQuestions = selectedQuiz.questions.map((question) => ({
                     ...question,
                     reponses: shuffleArray(question.reponses),
-                }));
+                }))
 
-                setData(shuffledQuestions);
-                setShuffledArray(shuffledQuestions);
+                setTitle(selectedQuiz.nom)
+                setData(shuffledQuestions)
             } else {
-                toast.error("Quiz non trouvé");
+                toast.error('Quiz non trouvé')
             }
         } catch (error) {
-            toast.error(`Une erreur s'est produite : ${error.message}`);
+            toast.error(`Une erreur s'est produite : ${error.message}`)
         }
-    };
+    }
 
     useEffect(() => {
-        fetchData();
-    }, []);
+        fetchData()
+    }, [])
+
+    const nextQuestion = () => {
+        clearInterval(timer)
+        setTime(maxTime)
+        if (currQuestion === data.length - 1) {
+            setFinished(true)
+        }
+        setCurrQuestion(currQuestion + 1)
+
+        setTimer(
+            setInterval(() => {
+                setTime((prevTime) => prevTime - 1)
+            }, 1000),
+        )
+    }
+
+    useEffect(() => {
+        if (time < 0) {
+            nextQuestion()
+        }
+    }, [time])
 
     const shuffleArray = (array) => {
-        const compareRandom = () => Math.random() - 0.5;
-        const shuffledArray = [...array];
-        shuffledArray.sort(compareRandom);
+        const compareRandom = () => Math.random() - 0.5
+        const shuffledArray = [...array]
+        shuffledArray.sort(compareRandom)
 
-        return shuffledArray;
-    };
+        return shuffledArray
+    }
 
+    const addReponse = (reponse) => {
+        reponseUser[currQuestion] = reponse
+        nextQuestion()
+    }
     return (
-        <div className='container mt-5'>
+        <Container>
             <ToastContainer />
-
-            {currQuestion <= 10 ? (
-                // <QuestionQuiz />
-                <div>QuestionQuiz</div>
+            {currQuestion === -1 ? (
+                <PreQuiz title={title} maxTime={maxTime} nextQuestion={nextQuestion}></PreQuiz>
             ) : (
-                <div className=''>
-                    <QuizResult questions={shuffledQuestions} reponsesUser={reponsesUser} />
-                </div>
+                <>
+                    {!finished ? (
+                        <>
+                            <Timer time={time} maxTime={maxTime} />
+                            <QuestionQuiz question={data[currQuestion]} addReponse={addReponse} />
+                        </>
+                    ) : (
+                        <QuizResult questions={data} reponsesUser={reponseUser} />
+                    )}
+                </>
             )}
-        </div>
-    );
-
+        </Container>
+    )
 }
 
 export default Quiz
-
-const reponsesUser = [1, 3, 2, 1, 1, 3, 0, 2, 1, 2]

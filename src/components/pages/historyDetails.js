@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify'
 
 import { formatDate, fetchData } from '../../utils/fonctions'
+import BoutonRetour from '../layout/boutonRetour'
 
 const HistoryDetails = () => {
     const [data, setData] = useState(null)
@@ -23,12 +24,8 @@ const HistoryDetails = () => {
     return (
         <div className='container my-3'>
             <ToastContainer />
-            <Link
-                to='/histoire'
-                className='link-secondary link-underline-opacity-0 link-underline-opacity-100-hover'
-            >
-                Retour
-            </Link>
+            <BoutonRetour link="histoire"/>
+            
             {data !== null ? (
                 <>
                     <h1>{data.title}</h1>

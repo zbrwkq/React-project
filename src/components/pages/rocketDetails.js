@@ -3,6 +3,7 @@ import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
 import { fetchData, bigNumber } from '../../utils/fonctions'
 import { ToastContainer, toast } from 'react-toastify'
+import BoutonRetour from '../layout/boutonRetour'
 
 const RocketDetails = () => {
     const [data, setData] = useState(null)
@@ -21,12 +22,7 @@ const RocketDetails = () => {
 
     return (
         <div className='container my-3'>
-            <Link
-                to='/rocket'
-                className='link-secondary link-underline-opacity-0 link-underline-opacity-100-hover'
-            >
-                Retour
-            </Link>
+            <BoutonRetour link="rocket"/>
             <ToastContainer />
             {data !== null ? (
                 <>

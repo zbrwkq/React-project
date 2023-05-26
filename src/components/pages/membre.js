@@ -7,9 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import { library } from '@fortawesome/fontawesome-svg-core';
+import BoutonRetour from '../layout/boutonRetour';
 
-library.add(faChevronRight);
 
 const Membre = () => {
     const [data, setData] = useState([])
@@ -31,7 +30,7 @@ const Membre = () => {
 
     return (
         <div className='container mt-3'>
-            <Link to="/equipage" className="link-secondary btnRetour"><FontAwesomeIcon icon={faChevronRight} className="btnRetour" flip="horizontal" /> Retour</Link>
+            <BoutonRetour link="equipage"/>
             <ToastContainer />
             <CardMembre key={data.id} membre={data}></CardMembre>
         </div>

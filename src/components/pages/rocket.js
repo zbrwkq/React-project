@@ -4,6 +4,9 @@ import { ToastContainer, toast } from 'react-toastify'
 import { fetchData, bigNumber } from '../../utils/fonctions'
 
 import RocketCharts from '../layout/rocketCharts'
+import Container from '../layout/container'
+import CardList from '../layout/cardList'
+import Card from '../layout/card'
 
 const Rocket = () => {
     const [data, setData] = useState(null)
@@ -20,43 +23,41 @@ const Rocket = () => {
     }, [])
 
     return (
-        <div className='container my-3'>
+        <Container>
             <ToastContainer />
             {data !== null ? (
                 <>
-                    <div className='row justify-content-between gy-5'>
+                    <CardList>
                         {data.map((data) => (
-                            <div key={data.id} className='card col-5 col-lg-3 mx-1'>
-                                <Link to={`${data.id}`} className='text-dark text-decoration-none'>
-                                    <img
-                                        src={data.flickr_images[0]}
-                                        className='card-img-top'
-                                        alt={data.name}
-                                    />
-                                    <div className='card-body text-center'>
-                                        <p>{data.name}</p>
-                                        <ul className='list-group list-group-flush'>
-                                            <li className='list-group-item d-flex justify-content-between align-items-center'>
-                                                Hauteur : <span>{data.height.meters}m</span>
-                                            </li>
-                                            <li className='list-group-item d-flex justify-content-between align-items-center'>
-                                                Diamètre : <span>{data.diameter.meters}m</span>
-                                            </li>
-                                            <li className='list-group-item d-flex justify-content-between align-items-center'>
-                                                Masse : <span>{bigNumber(data.mass.kg)}kg</span>
-                                            </li>
-                                        </ul>
-                                        <p></p>
-                                        <p></p>
-                                    </div>
-                                </Link>
-                            </div>
+                            <Card link={`${data.id}`} key={data.id}>
+                                <img
+                                    src={data.flickr_images[0]}
+                                    className='card-img-top'
+                                    alt={data.name}
+                                />
+                                <div className='card-body text-center'>
+                                    <p>{data.name}</p>
+                                    <ul className='list-group list-group-flush'>
+                                        <li className='list-group-item d-flex justify-content-between align-items-center'>
+                                            Hauteur : <span>{data.height.meters}m</span>
+                                        </li>
+                                        <li className='list-group-item d-flex justify-content-between align-items-center'>
+                                            Diamètre : <span>{data.diameter.meters}m</span>
+                                        </li>
+                                        <li className='list-group-item d-flex justify-content-between align-items-center'>
+                                            Masse : <span>{bigNumber(data.mass.kg)}kg</span>
+                                        </li>
+                                    </ul>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </Card>
                         ))}
-                    </div>
+                    </CardList>
                     <RocketCharts data={data} />
                 </>
             ) : null}
-        </div>
+        </Container>
     )
 }
 
