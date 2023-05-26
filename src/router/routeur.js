@@ -10,6 +10,8 @@ import RocketDetails from '../components/pages/rocketDetails'
 import Entreprise from '../components/pages/entreprise'
 import Equipage from '../components/pages/equipage'
 import Membre from '../components/pages/membre'
+import Quizs from '../components/pages/quizs'
+import Quiz from '../components/pages/quiz'
 
 const Routeur = () => {
     return (
@@ -24,6 +26,8 @@ const Routeur = () => {
                     <Route path='/rocket/:id' element={<RocketDetails />}></Route>
                     <Route path='/equipage' element={<Equipage />}></Route>
                     <Route path='/membre/:id' element={<Membre />}></Route>
+                    <Route path='/quizs' element={<Quizs />}></Route>
+                    <Route path='/quiz/:id' element={<Quiz />}></Route>
                     <Route path='*' element={<NoMatch />}></Route>
                 </Routes>
             </Layout>

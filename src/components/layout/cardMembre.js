@@ -40,9 +40,9 @@ const CardMembre = ({ membre }) => {
                     ) : membre.agency === "JAXA" ? (
                         <img className="agencyIcon ms-2" src={logoJaxa}></img>
                     ) : membre.agency === "SpaceX" ? (
-                        <img className="agencyIcon ms-2" src={logoSpaceX}></img>
+                        <img className="agencyIcon2 ms-2" src={logoSpaceX}></img>
                     ) : membre.agency === "Axiom Space" ? (
-                        <img className="agencyIcon ms-2" src={logoAxiom}></img>
+                        <img className="agencyIcon2 ms-2" src={logoAxiom}></img>
                     ) : membre.agency === "Roscosmos" ? (
                         <img className="agencyIcon ms-2" src={logoRoscosmos}></img>
                     ) : ""
