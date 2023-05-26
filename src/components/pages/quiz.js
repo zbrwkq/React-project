@@ -3,9 +3,11 @@ import { Link, useParams } from 'react-router-dom';
 import quizs from '../../assets/data/quizs.json'
 import { ToastContainer, toast } from 'react-toastify';
 import QuestionQuiz from '../layout/questionQuiz';
+import QuizResult from '../layout/quizResult';
 
 const Quiz = () => {
     const [data, setData, currQuestion] = useState([])
+    const [shuffledQuestions, setShuffledArray] = useState([]);
     const { id = '' } = useParams()
 
     const fetchData = async () => {
@@ -19,6 +21,7 @@ const Quiz = () => {
                 }));
 
                 setData(shuffledQuestions);
+                setShuffledArray(shuffledQuestions);
             } else {
                 toast.error("Quiz non trouvé");
             }
@@ -27,10 +30,9 @@ const Quiz = () => {
         }
     };
 
-
     useEffect(() => {
-        fetchData()
-    }, [])
+        fetchData();
+    }, []);
 
     const shuffleArray = (array) => {
         const compareRandom = () => Math.random() - 0.5;
@@ -40,19 +42,23 @@ const Quiz = () => {
         return shuffledArray;
     };
 
-
     return (
-        <div className='container mt-3'>
+        <div className='container mt-5'>
             <ToastContainer />
 
-            {data.map((question, index) => (
-
-                <QuestionQuiz key={question.id} question={question} />
-
-            ))}
+            {currQuestion <= 10 ? (
+                // <QuestionQuiz />
+                <div>QuestionQuiz</div>
+            ) : (
+                <div className=''>
+                    <QuizResult questions={shuffledQuestions} reponsesUser={reponsesUser} />
+                </div>
+            )}
         </div>
     );
 
 }
 
 export default Quiz
+
+const reponsesUser = [1, 3, 2, 1, 1, 3, 0, 2, 1, 2]
